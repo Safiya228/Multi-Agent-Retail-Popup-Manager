@@ -1,0 +1,28 @@
+flowchart LR
+
+    A[Operational Data]
+    A --> B[Shared Blackboard]
+
+    B --> C[Demand Agent]
+    B --> D[Inventory Agent]
+    B --> E[Labor Agent]
+    B --> F[Pricing Agent]
+    B --> G[Customer Experience Agent]
+
+    C --> H[Supervisor Agent]
+    D --> H
+    E --> H
+    F --> H
+    G --> H
+
+    H --> I{Risk Assessment}
+
+    I -->|Low Risk| J[Automated Recommendation]
+
+    I -->|High Risk| K[Human Manager]
+
+    K --> L[Approve]
+    K --> M[Reject]
+
+    H --> N[Audit Log]
+    K --> N
