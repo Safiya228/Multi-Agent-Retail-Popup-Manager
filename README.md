@@ -4,7 +4,6 @@ A prototype multi-agent system for running a food pop-up. Five specialized agent
 
 **The agents are rule-based, not LLM-driven.** That was a deliberate choice: the point of the project is the coordination design (shared state, a message contract, escalation rules, auditability), and deterministic agents are easy to test and explain. The message schema is the interface an LLM-backed agent could plug into. See [design notes](docs/design.md) for the reasoning, including why MARL was not used.
 
-Course project (McGill MMA, Agentic AI). Authors: TODO (names). My contribution: TODO.
 
 ## Quick start
 
