@@ -2,7 +2,7 @@
 
 A prototype multi-agent system for running a food pop-up. Five specialized agents (demand, inventory, labor, pricing, customer experience) read a shared state and send structured messages to a Supervisor, which either issues an automated recommendation or escalates to a human manager. Every decision cycle is written to an audit log.
 
-**The agents are rule-based, not LLM-driven.** That was a deliberate choice: the point of the project is the coordination design (shared state, a message contract, escalation rules, auditability), and deterministic agents are easy to test and explain. The message schema is the interface an LLM-backed agent could plug into. See [design notes](docs/design.md) for the reasoning, including why MARL was not used.
+The agents are rule-based, not LLM-driven. That was a deliberate choice: the point of the project is the coordination design (shared state, a message contract, escalation rules, auditability), and deterministic agents are easy to test and explain. The message schema is the interface an LLM-backed agent could plug into. See [design notes](docs/design.md) for the reasoning, including why MARL was not used.
 
 
 ## Quick start
